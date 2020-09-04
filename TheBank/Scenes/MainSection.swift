@@ -16,7 +16,7 @@ struct MainSection: View {
 }
 
 private struct MainView: View {
-    @Environment(\.deeplink) var deeplink
+//    @Environment(\.deeplink) var deeplink
 
     var accountService: AccountService
 
@@ -25,7 +25,7 @@ private struct MainView: View {
             SectionTitle(title: "Your Accounts")
             Accounts(list: accountService.accounts())
                 .padding(.trailing, 40.0)
-                .environment(\.deeplink, deeplink)
+//                .environment(\.deeplink, deeplink)
             SectionTitle(title: "Your Cards")
             Spacer()
             CreditCards()
